@@ -1,12 +1,14 @@
 import React from 'react'
 import {Outlet} from 'react-router-dom/dist'
-import Header from './components/header'
+import Sidebar from './components/sidebar'
 
 const WebLayout = () => {
   return (
     <>
-      <Header />
-      <Outlet />
+      <Sidebar />
+      <div className='p-6 flex-1 ml-[300px]'>
+        <Outlet />
+      </div>
     </>
   )
 }

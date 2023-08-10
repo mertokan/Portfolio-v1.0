@@ -1,7 +1,7 @@
 import WebLayout from '@/layout/web'
-import NotFound from '@/pages/home/error-page'
+import NotFound from '@/pages/error-page'
 import Home from '@/pages/home/home'
-import UnderConstruction from '@/pages/home/under-construction'
+import UnderConstruction from '@/pages/under-construction'
 import {createBrowserRouter} from 'react-router-dom'
 
 const routes = createBrowserRouter([
