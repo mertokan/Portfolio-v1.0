@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      objectPosition: {
+        'photo': '0% 20%',
+      },
       colors: {
         neutral: {
           0: 'rgb(253, 253, 253)',
