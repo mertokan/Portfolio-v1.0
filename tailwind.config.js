@@ -4,13 +4,14 @@ export default {
   theme: {
     extend: {
       objectPosition: {
-        'photo': '0% 20%',
+        photo: '0% 20%',
       },
       colors: {
         neutral: {
           0: 'rgb(253, 253, 253)',
           1: 'rgb(235, 238, 239)',
           2: 'rgb(204, 209, 210)',
+          3: 'rgb(169 173 184)',
           4: 'rgb(153, 162, 165)',
           6: 'rgb(153, 162, 165)',
           8: 'rgb(36, 43, 51)',

@@ -1,4 +1,5 @@
 import WebLayout from '@/layout/web'
+import About from '@/pages/about'
 import NotFound from '@/pages/error-page'
 import Home from '@/pages/home/home'
 import UnderConstruction from '@/pages/under-construction'

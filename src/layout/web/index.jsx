@@ -6,7 +6,7 @@ const WebLayout = () => {
   return (
     <>
       <Sidebar />
-      <div className='p-6 flex-1 ml-[300px]'>
+      <div className='flex-1 ml-[300px]'>
         <Outlet />
       </div>
     </>

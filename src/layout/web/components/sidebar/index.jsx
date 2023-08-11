@@ -3,6 +3,7 @@ import {NAVBAR_MENU} from '@/utils/consts/navbar'
 import classNames from 'classnames'
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import {Link} from 'react-scroll'
 
 const Sidebar = () => {
   return (
@@ -23,23 +24,18 @@ const Sidebar = () => {
               <div className='st-nav flex flex-col'>
                 <ul className='st-nav-list st-onepage-nav flex flex-col'>
                   {NAVBAR_MENU.map((menu, key) => (
-                    <li>
-                      {' '}
-                      <NavLink
-                        key={key}
+                    <li key={key}>
+                      <Link
                         to={menu.path}
-                        className={({isActive}) =>
-                          classNames(
-                            'py-4 uppercase font-medium inline-block transition-all duration-300 ease-in-out',
-                            {
-                              '': !isActive,
-                              'text-state-yellow': isActive,
-                            }
-                          )
-                        }
+                        activeClass='text-state-yellow'
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        className='py-4 uppercase font-medium inline-block transition-all duration-300 ease-in-out'
                       >
                         {menu.title}
-                      </NavLink>
+                      </Link>
                     </li>
                   ))}
                 </ul>
