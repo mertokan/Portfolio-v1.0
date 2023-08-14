@@ -1,8 +1,6 @@
 import Button from '@/components/button'
 import {NAVBAR_MENU} from '@/utils/consts/navbar'
-import classNames from 'classnames'
 import React from 'react'
-import {NavLink} from 'react-router-dom'
 import {Link} from 'react-scroll'
 
 const Sidebar = () => {
@@ -31,8 +29,8 @@ const Sidebar = () => {
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={500}
-                        className='py-4 uppercase font-medium inline-block transition-all duration-300 ease-in-out'
+                        duration={1000}
+                        className='py-4 uppercase font-medium inline-block transition-all duration-300 ease-in-out cursor-pointer'
                       >
                         {menu.title}
                       </Link>
