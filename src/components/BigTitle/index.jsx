@@ -9,9 +9,10 @@ const BigTitle = ({title}) => {
         before:content-[""] before:absolute before:bg-site-darkcolor5 before:w-44 before:h-[2px] before:-bottom-4 before:left-2/4 before:-translate-x-2/4
         after:content-[""] after:absolute after:bg-state-yellow after:w-20 after:h-[2px] after:-bottom-4 after:left-2/4 after:-translate-x-2/4'
         >
-          {title}
+        {"<"}{title}{">"}
         </h4>
-        <h2 className='st-section-heading-subtitle uppercase select-none absolute top-0 left-2/4 -translate-x-2/4 text-[90px] font-bold m-0 -mt-8 text-site-darkcolor1/50 w-full'>{title}</h2>
+        <h2 className='st-section-heading-subtitle uppercase select-none absolute top-0 left-2/4 -translate-x-2/4 text-[90px] font-bold m-0 -mt-8 text-site-darkcolor1/50 w-full'>
+        {"<"}{title}{"/>"}</h2>
       </div>
     </div>
   )

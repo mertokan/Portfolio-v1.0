@@ -14,12 +14,13 @@ const Button = ({children, as, variant, size, ...props}) => {
             variant === 'primary',
           'border-state-yellow text-state-yellow hover:bg-state-yellow hover:text-neutral-10 hover:shadow-lg hover:shadow-state-yellow/30':
             variant === 'secondary',
-          'rounded-none px-2 h-8 justify-items-start gap-3 text-blue-300 bg-primary-0 hover:bg-neutral-6 hover:bg-opacity-30 ':
-            variant === 'activeTheme',
+          'bg-state-yellow border-state-yellow text-site-darkcolor2 hover:shadow-lg hover:shadow-state-yellow/30 gap-3':
+            variant === 'projectButton',
 
           'py-3': size === 'normal',
           'px-[3.2em] py-[0.69em]': size === 'small',
           'px-[1.5em] py-[12px]': size === 'medium',
+          'py-[10px]': size === 'xsmall',
         }
       ),
     },
@@ -29,8 +30,8 @@ const Button = ({children, as, variant, size, ...props}) => {
 
 Button.propTypes = {
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.string, PropTypes.node]),
-  variant: PropTypes.oneOf(['primary', 'secondary']),
-  size: PropTypes.oneOf(['normal', 'small', 'medium']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'projectButton']),
+  size: PropTypes.oneOf(['normal', 'small', 'medium', 'xsmall']),
   as: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   props: PropTypes.any,
 }

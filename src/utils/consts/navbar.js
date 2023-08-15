@@ -8,11 +8,8 @@ export const NAVBAR_MENU = [
     title: 'About',
   },
   {
-    path: '/uc',
-    title: 'Contact',
+    path: 'projects',
+    title: 'Projects',
   },
-  {
-    path: '/uc',
-    title: 'Blog',
-  },
+  
 ]

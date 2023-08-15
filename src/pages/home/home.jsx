@@ -2,6 +2,7 @@ import Symbol from '@/components/symbol'
 import React from 'react'
 import {FaLinkedin, FaTwitter, FaGithub} from 'react-icons/fa'
 import About from '../about'
+import Projects from '../projects'
 
 const Home = () => {
   return (
@@ -46,7 +47,8 @@ const Home = () => {
         <div id='particles-js'></div>
       </section>
       {/* // End Hero Seciton */}
-      <About />
+      {/* <About />
+      <Projects /> */}
     </>
   )
 }
