@@ -5,7 +5,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <section className='pt-24 bg-site-darkcolor2 h-max' id='projects'>
+    <section className='py-24 bg-site-darkcolor2 h-max' id='projects'>
       <BigTitle title='Projects' />
       <div className='container mx-auto grid justify-items-center gap-8'>
         {PROJECTS_LİST.map((project, index) => (

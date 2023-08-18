@@ -13,7 +13,7 @@ const About = () => {
           <div className='col-lg-6 wow fadeInLeft max-w-[50%]'>
             <div className='st-about-img-wrap'>
               <div className='st-about-img st-dynamic-bg st-bg max-w-[570px] min-h-[514px]'>
-                <img src='/about.jpg' alt='' className='object-cover w-full h-full' />
+                <img src='https://dummyimage.com/570x514/808080/fff' alt='' className='object-cover w-full h-full' />
               </div>
             </div>
             <div className='st-height-b0 st-height-lg-b30'></div>

@@ -21,7 +21,7 @@ const Home = () => {
             I also make website more & more interactive with web animations.
           </p>
           <div className='st-hero-social-links flex justify-center items-center gap-3'>
-            <Symbol to='https://www.linkedin.com/in/mert-okan-522140212/' target='_blank'>
+            <Symbol to='https://www.linkedin.com/in/mert-okan/' target='_blank'>
               <FaLinkedin />
             </Symbol>
             <Symbol to='https://twitter.com/mert_okan_12' target='_blank'>

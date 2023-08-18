@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../button'
 import {FaExternalLinkAlt, FaGithub} from 'react-icons/fa'
+import classNames from 'classnames'
 
 const ProjectCards = ({
   pName,
@@ -12,7 +13,12 @@ const ProjectCards = ({
   idev = false,
 }) => {
   return (
-    <div className='text-white border rounded-md p-5 flex group even:flex-row-reverse gap-6 w-[62.5%] h-80 relative overflow-hidden'>
+    <div
+      className={classNames(
+        'text-white border rounded-md p-5 flex group even:flex-row-reverse gap-6 w-[62.5%] h-80 relative overflow-hidden',
+        {'border-state-yellow': idev === true, 'border-state-green': idev === false}
+      )}
+    >
       {idev && (
         <div
           className='absolute bg-state-yellow text-neutral-8 font-semibold w-64 text-center py-1 select-none
