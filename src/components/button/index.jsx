@@ -14,13 +14,13 @@ const Button = ({children, as, variant, size, ...props}) => {
             variant === 'primary',
           'border-state-yellow text-state-yellow hover:bg-state-yellow hover:text-neutral-10 hover:shadow-lg hover:shadow-state-yellow/30':
             variant === 'secondary',
-          'bg-state-yellow border-state-yellow text-site-darkcolor2 hover:shadow-lg hover:shadow-state-yellow/30 gap-3':
+          'bg-state-yellow border-state-yellow text-site-darkcolor2 hover:shadow-lg hover:shadow-state-yellow/30 md:gap-3 gap-1':
             variant === 'projectButton',
 
           'py-3': size === 'normal',
           'px-[3.2em] py-[0.69em]': size === 'small',
           'px-[1.5em] py-[12px]': size === 'medium',
-          'px-3 lg:px-8 py-2 lg:py-[10px]': size === 'xsmall',
+          'px-[7px] md:px-3 lg:px-8 py-2 lg:py-[10px]': size === 'xsmall',
         }
       ),
     },
