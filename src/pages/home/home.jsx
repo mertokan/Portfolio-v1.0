@@ -17,8 +17,7 @@ const Home = () => {
             Hi, I am <span className='text-state-yellow'>Mert Okan</span>
           </h1>
           <p className='text-lg font-light mb-6 text-neutral-3'>
-            I am a frontend web developer. I can provide clean code and pixel perfect design. <br />
-            I also make website more & more interactive with web animations.
+          I am a frontend web developer. I can provide responsive design.
           </p>
           <div className='st-hero-social-links flex justify-center items-center gap-3'>
             <Symbol to='https://www.linkedin.com/in/mert-okan/' target='_blank'>
