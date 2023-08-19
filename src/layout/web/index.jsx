@@ -10,7 +10,7 @@ const WebLayout = () => {
   return (
     <>
       <Sidebar />
-      <div className='flex-1 ml-[300px]'>
+      <div className='flex-1 md:ml-[300px]'>
         <Home />
         <About />
         <Projects />

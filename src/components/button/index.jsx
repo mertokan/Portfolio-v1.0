@@ -8,7 +8,7 @@ const Button = ({children, as, variant, size, ...props}) => {
     {
       ...props,
       className: classNames(
-        'inline-flex items-center justify-center border rounded-[50px] font-medium min-w-[170px] transition-all duration-300',
+        'inline-flex items-center justify-center border rounded-[50px] font-medium transition-all duration-300',
         {
           'bg-state-yellow border-state-yellow text-site-darkcolor2 hover:-translate-y-1 hover:shadow-lg hover:shadow-state-yellow/30':
             variant === 'primary',
@@ -20,7 +20,7 @@ const Button = ({children, as, variant, size, ...props}) => {
           'py-3': size === 'normal',
           'px-[3.2em] py-[0.69em]': size === 'small',
           'px-[1.5em] py-[12px]': size === 'medium',
-          'py-[10px]': size === 'xsmall',
+          'px-3 lg:px-8 py-2 lg:py-[10px]': size === 'xsmall',
         }
       ),
     },

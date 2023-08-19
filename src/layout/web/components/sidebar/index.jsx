@@ -5,7 +5,7 @@ import {Link} from 'react-scroll'
 
 const Sidebar = () => {
   return (
-    <aside className='st-site-header st-style2 st-sticky-header fixed h-full top-0 flex-shrink-0 w-[300px] border-r border-site-darkcolor4 bg-site-darkcolor2 overflow-auto'>
+    <aside className='st-site-header hidden md:block st-style2 st-sticky-header fixed h-full top-0 flex-shrink-0 w-[300px] border-r border-site-darkcolor4 bg-site-darkcolor2 overflow-auto'>
       <div className='st-main-header px-5 pt-10'>
         <div className='container'>
           <div className='st-main-header-in'>
