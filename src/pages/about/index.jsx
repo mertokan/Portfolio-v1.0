@@ -9,7 +9,7 @@ const About = () => {
       <BigTitle title='about me' />
       <div className='container mx-auto mb-9'>
         <div className='flex flex-wrap md:-mx-[15px] justify-center gap-8'>
-          <div className='max-w-[50%] hidden md:block'>
+          <div className='max-w-[50%] hidden'>
             <div className='max-w-[570px] min-h-[514px]'>
               <img
                 src='https://dummyimage.com/570x514/808080/fff'
