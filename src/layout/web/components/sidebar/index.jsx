@@ -38,7 +38,7 @@ const Sidebar = () => {
                   ))}
                 </ul>
                 <div className='st-hero-btn'>
-                  <Button variant='secondary' size='small'>
+                  <Button variant='secondary' size='small' as='a' download href='/Resume-Mert-OKAN.pdf'>
                     Hire Me
                   </Button>
                 </div>
