@@ -1,8 +1,24 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website with information about me and my projects
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![App Screenshot]("public/mertokan.vercel.app.png")
+
+## Authors
+
+- [@Mert OKAN](https://www.github.com/Elitesmert)
+
+## Packages
+
+- [Tailwind css](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/)
+- [React Router Dom](https://reactrouter.com/en/main)
+- [classnames](https://www.npmjs.com/package/classnames)
+- [tsparticles](https://particles.js.org/)
+- [react-scroll](https://www.npmjs.com/package/react-scroll)
+- [@vercel/analytics](https://vercel.com/analytics)
+- [prop-types](https://www.npmjs.com/package/prop-types)
+- [circle-flags](https://github.com/HatScripts/circle-flags/tree/gh-pages/flags)
+- [React i18next Dil Sistemi](https://react.i18next.com/)
