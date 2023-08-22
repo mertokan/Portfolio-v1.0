@@ -19,7 +19,6 @@ const BgParticle = () => {
       loaded={particlesLoaded}
       options={{
         detectRetina: true,
-        fpsLimit: 120,
         fullScreen: {
           enable: false,
           zIndex: 1,
