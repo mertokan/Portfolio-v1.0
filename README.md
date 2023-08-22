@@ -4,7 +4,7 @@ Website with information about me and my projects
 
 ## Screenshots
 
-![App Screenshot]("https://res.cloudinary.com/ddlu6plcm/image/upload/v1692719307/mertokan.vercel.app_smrcpc.png")
+![App Screenshot](https://res.cloudinary.com/ddlu6plcm/image/upload/v1692719307/mertokan.vercel.app_smrcpc.png)
 
 ## Authors
 
