@@ -1,5 +1,4 @@
 import React from 'react'
-import {Outlet} from 'react-router-dom/dist'
 import Sidebar from './components/sidebar'
 import Home from '@/pages/home/home'
 import About from '@/pages/about'

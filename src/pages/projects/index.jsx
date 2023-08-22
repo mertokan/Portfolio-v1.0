@@ -20,14 +20,6 @@ const Projects = () => {
             idev={project.idev}
           />
         ))}
-        {/* <ProjectCards
-          list={['Proje 1', 'Proje 2']}
-          siteURL='https://www.armaturkbirlikleri.me/'
-          github='https://github.com/Elitesmert/atb'
-          imageSRC='/armaturkbirlikleri.png'
-        />
-        <ProjectCards />
-        <ProjectCards /> */}
       </div>
     </section>
   )
