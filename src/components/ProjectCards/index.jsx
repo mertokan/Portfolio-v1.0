@@ -50,12 +50,12 @@ const ProjectCards = ({
         </div>
         <div className='flex gap-5 mt-auto justify-around'>
           <Button as='a' href={github} target='_blank' variant='projectButton' size='xsmall'>
-            <FaGithub />
+            <FaGithub className='hidden xs:block' />
             Github
           </Button>
           <Button as='a' href={siteURL} target='_blank' variant='projectButton' size='xsmall'>
             Live Demo
-            <FaExternalLinkAlt />
+            <FaExternalLinkAlt className='hidden xs:block' />
           </Button>
         </div>
       </div>

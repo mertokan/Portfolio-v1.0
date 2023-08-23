@@ -3,6 +3,16 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      container: {
+        screens: {
+          '2xs': '100%',
+          xs: '100%',
+        },
+      },
+      screens: {
+        '2xs': '375px',
+        xs: '425px',
+      },
       objectPosition: {
         photo: '0% 20%',
       },
