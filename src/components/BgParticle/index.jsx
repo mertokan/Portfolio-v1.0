@@ -4,12 +4,12 @@ import {loadFull} from 'tsparticles' // if you are going to use `loadFull`, inst
 
 const BgParticle = () => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine)
+    // console.log(engine)
     await loadFull(engine)
   }, [])
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container)
+    // await console.log(container)
   }, [])
   return (
     <Particles
@@ -57,7 +57,7 @@ const BgParticle = () => {
               default: 'bounce',
             },
             random: true,
-            speed: 0.2,
+            speed: 0.4,
             straight: false,
           },
           number: {

@@ -50,7 +50,6 @@ const Sidebar = () => {
           </div>
         </div>
       </aside>
-      <div className='block md:hidden container mx-auto'></div>
     </>
   )
 }

@@ -8,7 +8,7 @@ const About = () => {
     <section id='about' className='h-max bg-site-darkcolor3 py-24'>
       <BigTitle title='about me' />
       <div className='container mx-auto mb-9'>
-        <div className='flex flex-wrap md:-mx-[15px] justify-center gap-8'>
+        <div className='flex flex-wrap justify-center gap-8'>
           <div className='max-w-[50%] hidden'>
             <div className='max-w-[570px] min-h-[514px]'>
               <img
