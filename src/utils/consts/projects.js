@@ -19,7 +19,7 @@ export const PROJECTS_LİST = [
   },
 {
     pName: 'Weather App',
-    use: ['Vite', 'TailwindCSS', NextUi, Axios],
+    use: ['Vite', 'TailwindCSS', 'NextUi', 'Axios'],
     siteURL: 'https://weather-app-first.vercel.app/',
     github: 'https://github.com/Elitesmert/weather-app',
     desc: 'I made a weather application that can draw api with axios.',
