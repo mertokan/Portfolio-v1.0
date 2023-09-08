@@ -23,7 +23,7 @@ export const PROJECTS_LİST = [
     siteURL: 'https://weather-app-first.vercel.app/',
     github: 'https://github.com/Elitesmert/weather-app',
     desc: 'I made a weather application that can draw api with axios.',
-    imageSRC: '/',
+    imageSRC: '/uc.png',
     idev: true,
   },
 ]
