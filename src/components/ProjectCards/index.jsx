@@ -28,12 +28,12 @@ const ProjectCards = ({
           <p>In Development</p>
         </div>
       )}
-      <div className='rounded-2xl overflow-hidden select-none flex h-52 lg:h-72 md:h-36 xl:h-auto xl:w-3/4'>
+      <div className='rounded-2xl overflow-hidden select-none flex h-52 lg:h-72 md:h-36 xl:h-auto xl:w-2/4'>
         <a href={siteURL} target='_blank' className='inline-flex w-full h-full'>
           <img src={imageSRC} alt={imageSRC} className='w-full h-full object-cover object-top' />
         </a>
       </div>
-      <div className='flex flex-col gap-4 xl:gap-0'>
+      <div className='flex flex-col gap-4 xl:gap-0 xl:w-2/4'>
         <div className='mt-auto'>
           <h1 className='text-center mb-2 font-medium text-lg'>{pName}</h1>
           <p>{desc}</p>
