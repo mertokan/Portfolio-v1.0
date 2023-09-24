@@ -24,6 +24,6 @@ export const PROJECTS_LİST = [
     github: 'https://github.com/Elitesmert/weather-app',
     desc: 'I made a weather application that can draw api with axios.',
     imageSRC: '/weatherapp.png',
-    idev: true,
+    idev: false,
   },
 ]
