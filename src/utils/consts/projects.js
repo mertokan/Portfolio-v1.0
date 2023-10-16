@@ -2,7 +2,7 @@ export const PROJECTS_LİST = [
   {
     pName: 'ATB',
     use: ['NextJS', 'TailwindCSS', 'Firebase'],
-    siteURL: 'https://www.armaturkbirlikleri.me/',
+    siteURL: 'https://armaturkbirlikleri.vercel.app/',
     github: 'https://github.com/Elitesmert/atb',
     desc: 'A project I made for my friends. A site where the group is promoted and applications are received. It is actively used.',
     imageSRC: '/armaturkbirlikleri.png',
