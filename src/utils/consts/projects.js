@@ -13,7 +13,7 @@ export const PROJECTS_LİST = [
     use: ['Vite', 'TailwindCSS'],
     siteURL: 'https://petbookapp.vercel.app/',
     github: 'https://github.com/Elitesmert/Petbook-v1.0',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies ultrices, nunc nisl ultricies nunc, vitae',
+    desc: '',
     imageSRC: '/petbookapp.png',
     idev: true,
   },
