@@ -31,7 +31,7 @@ export const PROJECTS_LİST = [
     use: ['Vite', 'TailwindCSS', 'Supabase', 'Strapi', 'Redux', 'Axios','Sass'],
     siteURL: 'https://clothsstore.vercel.app/',
     github: 'https://github.com/Elitesmert/Shop-App',
-    desc: "It's a small shop app I made using Strapi and Supabase.",
+    desc: "It's a small shop app I made using Strapi and Supabase. Not responsive.",
     imageSRC: '/shopapp.png',
     idev: false,
   },
