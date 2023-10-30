@@ -2,6 +2,8 @@ import React from 'react'
 import Button from '../button'
 import {FaExternalLinkAlt, FaGithub} from 'react-icons/fa'
 import classNames from 'classnames'
+import {Skeleton} from '@nextui-org/react'
+import {useEffect} from 'react'
 
 const ProjectCards = ({
   pName,
@@ -12,6 +14,17 @@ const ProjectCards = ({
   imageSRC = '/uc.png',
   idev = false,
 }) => {
+  const [isLoaded, setIsLoaded] = React.useState(false)
+
+  const toggleLoad = () => {
+    setInterval(() => {
+      setIsLoaded(true)
+    }, 300)
+  }
+
+  useEffect(() => {
+    toggleLoad()
+  }, [])
   return (
     <div
       className={classNames(
@@ -21,18 +34,21 @@ const ProjectCards = ({
     >
       {idev && (
         <div
-          className='absolute bg-state-yellow text-neutral-8 font-semibold w-64 text-center py-1 select-none
+          className='absolute bg-state-yellow text-neutral-8 font-semibold w-64 text-center py-1 select-none z-10
         group-odd:rotate-45 group-odd:-right-20 group-odd:top-10
         group-even:-rotate-45 group-even:-left-20 group-even:top-7'
         >
           <p>In Development</p>
         </div>
       )}
-      <div className='rounded-2xl overflow-hidden select-none flex h-52 lg:h-72 md:h-36 xl:h-auto xl:w-2/4'>
-        <a href={siteURL} target='_blank' className='inline-flex w-full h-full'>
+      <Skeleton
+        isLoaded={isLoaded}
+        className='rounded-2xl overflow-hidden select-none h-52 lg:h-72 md:h-36 xl:h-auto xl:w-2/4 grid'
+      >
+        <a href={siteURL} target='_blank' className='w-full h-full'>
           <img src={imageSRC} alt={imageSRC} className='w-full h-full object-cover object-top' />
         </a>
-      </div>
+      </Skeleton>
       <div className='flex flex-col gap-4 xl:gap-0 xl:w-2/4'>
         <div className='mt-auto'>
           <h1 className='text-center mb-2 font-medium text-lg'>{pName}</h1>
@@ -40,12 +56,13 @@ const ProjectCards = ({
         </div>
         <div className='flex justify-evenly mt-auto flex-wrap gap-y-3'>
           {use.map((item, index) => (
-            <div
+            <Skeleton
+              isLoaded={isLoaded}
               key={index}
-              className='px-3 py-1 border rounded-md border-state-yellow shadow-md shadow-state-yellow/30 '
+              className='px-3 py-1 border rounded-md border-state-yellow shadow-md shadow-state-yellow/30 !bg-transparent'
             >
               <p className='text-state-yellow font-medium'>{item}</p>
-            </div>
+            </Skeleton>
           ))}
         </div>
         <div className='flex gap-5 mt-auto justify-around'>
