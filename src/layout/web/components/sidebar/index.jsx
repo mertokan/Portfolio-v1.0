@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <>
       <aside className='hidden md:block st-style2 st-sticky-header fixed min-h-full top-0 flex-shrink-0 w-[300px] border-r border-site-darkcolor4 bg-site-darkcolor2 overflow-auto'>
-        <div className='px-5 pt-10'>
+        <div className='px-5 pt-10 flex flex-col min-h-full'>
           <div className='container mx-auto'>
             <div className='h-48 w-48 rounded-full border-[6px] border-white/10 m-auto'>
               <img
@@ -43,7 +43,7 @@ const Sidebar = () => {
                   download
                   href='/Resume-Mert-OKAN.pdf'
                 >
-                  Hire Me
+                  Download CV
                 </Button>
               </div>
             </div>

@@ -8,6 +8,7 @@ import Snackbar from '@/components/Snackbar'
 import {Toaster, toast} from 'sonner'
 import {BsCheck2Circle} from 'react-icons/bs'
 import {BiError} from 'react-icons/bi'
+import {useEffect} from 'react'
 
 const Contact = () => {
   const formRef = useRef()
@@ -16,6 +17,7 @@ const Contact = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [subject, setSubject] = useState('')
   const [test, setTest] = useState('')
 
   const sendEmail = (e) => {
@@ -31,27 +33,60 @@ const Contact = () => {
       .then(
         (result) => {
           setSuccess(true)
-          setName('')
-          setEmail('')
-          setMessage('')
+          // setName('')
+          // setEmail('')
+          // setMessage('')
+          // setSubject('')
+          setTimeout(() => {
+            setSuccess(false)
+          }, 3000)
         },
         (error) => {
           setError(true)
+          setTimeout(() => {
+            setError(false)
+          }, 3000)
         }
       )
   }
-  toast('My toast', {
-    description: 'My description',
-    duration: 5000,
-  })
+
+  useEffect(() => {
+    toast('Thanks, I will get back to you ASAP', {
+      icon: <BsCheck2Circle className='text-2xl' />,
+      style: {
+        borderRadius: '10px',
+        background: 'rgb(50, 100, 10)',
+        color: '#fff',
+        padding: '10px',
+        fontSize: '1rem',
+      },
+    })
+  }, [success === true])
+
+  useEffect(() => {
+    toast('Something went wrong', {
+      icon: <BiError className='text-2xl' />,
+      style: {
+        borderRadius: '10px',
+        background: 'rgb(100, 10, 10)',
+        color: '#fff',
+        padding: '10px',
+        fontSize: '1rem',
+      },
+    })
+  }, [error === true])
+
   return (
     <section id='contact' className='h-max bg-site-darkcolor3 py-24'>
       <BigTitle title='contact' />
 
       <div>
-        <form ref={formRef} onSubmit={sendEmail}>
+        <form ref={formRef} onSubmit={sendEmail} className='w-2/4 mx-auto flex flex-col gap-5'>
           <Input
             type='text'
+            classNames={{
+              inputWrapper: 'bg-site-darkcolor1',
+            }}
             variant='faded'
             label='Name'
             name='name'
@@ -60,6 +95,21 @@ const Contact = () => {
             onValueChange={setName}
           />
           <Input
+            classNames={{
+              inputWrapper: 'bg-site-darkcolor1',
+            }}
+            type='text'
+            variant='faded'
+            label='Subject'
+            name='subject'
+            isRequired={true}
+            value={subject}
+            onValueChange={setSubject}
+          />
+          <Input
+            classNames={{
+              inputWrapper: 'bg-site-darkcolor1',
+            }}
             type='email'
             variant='faded'
             label='Email'
@@ -73,33 +123,40 @@ const Contact = () => {
           />
           <Textarea
             isRequired={true}
+            classNames={{
+              inputWrapper: 'bg-site-darkcolor1',
+            }}
             value={message}
             onValueChange={setMessage}
             name='message'
             variant='faded'
-            label='Description'
+            label='Message'
             labelPlacement='outside'
             placeholder='Enter your message'
             className=''
           />
-          <Button size='medium'>Send Email</Button>
-          {error && <p className='text-red-500'>Something went wrong, please try again</p>}
-          {success && <p className='text-green-500'>Thanks, I will get back to you ASAP</p>}
+          <Button size='medium' variant='projectButton'>
+            Send Email
+          </Button>
+          {error && (
+            <Toaster
+              position='bottom-left'
+              visibleToasts={1}
+              closeButton='true'
+              theme='dark'
+              duration={2000}
+            />
+          )}
+          {success && (
+            <Toaster
+              position='bottom-left'
+              visibleToasts={10}
+              closeButton='true'
+              theme='dark'
+              duration={2000}
+            />
+          )}
         </form>
-        <div
-          onClick={() =>
-            toast('Hello World', {
-              duration: 2000,
-              visibleToasts: 2,
-              icon: <BsCheck2Circle />,
-              position: 'bottom-left',
-              closeButton: true,
-            })
-          }
-        >
-          asd
-          <Toaster />
-        </div>
       </div>
     </section>
   )
