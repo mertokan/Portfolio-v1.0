@@ -26,6 +26,10 @@ body {
   -webkit-font-smoothing: antialiased;
   @apply transition-colors duration-200;
 }
+body,
+html {
+  @apply !bg-site-darkcolor2;
+}
 /*
     5. Improve media defaults
   */

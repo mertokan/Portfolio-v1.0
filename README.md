@@ -23,3 +23,36 @@ Website with information about me and my projects
 - [circle-flags](https://github.com/HatScripts/circle-flags/tree/gh-pages/flags)
 - [React i18next Dil Sistemi](https://react.i18next.com/)
 - [Sonner](https://sonner.emilkowal.ski/)
+
+## Version History
+
+- **v1.0.0** (2023-08-26)
+
+  - First version released.
+
+- **v1.0.1** (2023-09-08)
+
+  - Weather App project added.
+
+- **v1.0.2** (2023-09-16)
+
+  - Weather App project picture fix and details change.
+
+- **v1.0.3** (2023-10-23)
+
+  - ATB website link change and shop app, petbook desc change.
+
+- **v1.1.0** (2023-10-28)
+
+  - Contact section added and tested.
+
+- **v1.1.1** (2023-10-30)
+
+  - Contact design change and toast lib added.
+
+- **v1.1.2** (2023-11-01)
+
+  - sidebar updated, contact design updated and fix problems.
+
+- **v1.1.3** (2024-10-01)
+  - 3 projects have been added: Space Tourism Website, Entertainment Web App, First MERN App. Design issues have been resolved.
