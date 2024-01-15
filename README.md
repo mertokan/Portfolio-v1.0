@@ -56,3 +56,6 @@ Website with information about me and my projects
 
 - **v1.1.3** (2024-10-01)
   - 3 projects have been added: Space Tourism Website, Entertainment Web App, First MERN App. Design issues have been resolved.
+
+- **v1.1.4** (2024-15-01)
+  - Github link update.

@@ -29,7 +29,7 @@ const Home = () => {
             <Symbol to='https://twitter.com/mert_okan_12' target='_blank'>
               <FaTwitter />
             </Symbol>
-            <Symbol to='https://github.com/Elitesmert' target='_blank'>
+            <Symbol to='https://github.com/mertokan' target='_blank'>
               <FaGithub />
             </Symbol>
           </div>
